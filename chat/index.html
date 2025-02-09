@@ -11,8 +11,33 @@
     <div class="wrap-comments">
       <h2 class="subtitle">Оставьте ваш комментарий</h2>
 
-      <label for="name">Введите ваше имя</label>
-      <input type="text" id="name" autocomplete="off" />
+      <div class="wrap-username">
+        <p>Показывать ваше имя?</p>
+        <div class="wrap-answer">
+          <label for="answer-yes">Yes</label>
+          <input
+            type="checkbox"
+            name="answer"
+            class="checkbox"
+            value="Yes"
+            id="answer-yes"
+          />
+        </div>
+        <div class="wrap-answer">
+          <label for="answer-no">No</label>
+          <input
+            type="checkbox"
+            name="answer"
+            class="checkbox"
+            value="No"
+            id="answer-no"
+          />
+        </div>
+      </div>
+      <div class="wrap-input-name">
+        <label for="name">Введите ваше имя</label>
+        <input type="text" id="name" autocomplete="off" />
+      </div>
 
       <label for="photo">Введите ссылку для вашего аватара</label>
       <input type="url" id="photo" autocomplete="off" />
@@ -20,9 +45,7 @@
       <label for="comments">Комментарий</label>
       <textarea name="comment-area" id="comments" autocomplete="off"></textarea>
 
-      <button type="button" class="btn" onclick="sendMessage()">
-        Отправить
-      </button>
+      <button type="button" class="btn" disabled>Отправить</button>
     </div>
     <div class="wrap-chat">
       <h2 class="subtitle">Чат</h2>
